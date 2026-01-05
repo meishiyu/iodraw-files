@@ -113,7 +113,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="wlvn-3nBMkt-P7vC6q27-70" value="节点" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="680" y="20" width="210" height="423" as="geometry" />
+          <mxGeometry x="680" y="-14" width="210" height="457" as="geometry" />
         </mxCell>
         <mxCell id="wlvn-3nBMkt-P7vC6q27-75" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="wlvn-3nBMkt-P7vC6q27-70" source="wlvn-3nBMkt-P7vC6q27-71" target="wlvn-3nBMkt-P7vC6q27-74" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -247,7 +247,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="K8dGDAvrTJAFZOrZ0Jn6-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="K8dGDAvrTJAFZOrZ0Jn6-1" value="网管节点" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-160" y="-14" width="841" height="34" as="geometry" />
         </mxCell>
       </root>
