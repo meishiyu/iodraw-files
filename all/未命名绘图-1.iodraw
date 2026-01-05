@@ -1,0 +1,256 @@
+<mxfile host="www.iodraw.com" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" border="50" scale="3" compressed="false" locked="false" version="24.7.17">
+  <diagram name="Blank" id="YmL12bMKpDGza6XwsDPr">
+    <mxGraphModel dx="1834" dy="746" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="1" shadow="0">
+      <root>
+        <mxCell id="X5NqExCQtvZxIxQ7pmgY-0" />
+        <mxCell id="1" parent="X5NqExCQtvZxIxQ7pmgY-0" />
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="wlvn-3nBMkt-P7vC6q27-1" target="wlvn-3nBMkt-P7vC6q27-22" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-60" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-1" value="触发配置变更" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-120" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="wlvn-3nBMkt-P7vC6q27-6" target="wlvn-3nBMkt-P7vC6q27-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="60" y="319" />
+              <mxPoint x="60" y="90" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-6" value="涉及变更节点存表" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-120" y="289" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-19" value="业务侧" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-160" y="20" width="210" height="423" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-22" value="记录操作日志" style="rounded=0;whiteSpace=wrap;html=1;" parent="wlvn-3nBMkt-P7vC6q27-19" vertex="1">
+          <mxGeometry x="40" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-21" value="配置生成协程" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="50" y="20" width="210" height="423" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-8" value="生成配置文件" style="whiteSpace=wrap;html=1;rounded=0;" parent="wlvn-3nBMkt-P7vC6q27-21" vertex="1">
+          <mxGeometry x="43.75" y="40" width="122.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-14" value="upsert&lt;br&gt;更新配置管理表" style="whiteSpace=wrap;html=1;rounded=0;" parent="wlvn-3nBMkt-P7vC6q27-21" vertex="1">
+          <mxGeometry x="45" y="179" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="wlvn-3nBMkt-P7vC6q27-21" source="wlvn-3nBMkt-P7vC6q27-8" target="wlvn-3nBMkt-P7vC6q27-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-46" value="更新&lt;br&gt;配置管理表状态&lt;br&gt;（已下发或下发失败）" style="whiteSpace=wrap;html=1;rounded=0;" parent="wlvn-3nBMkt-P7vC6q27-21" vertex="1">
+          <mxGeometry x="46.25" y="342" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="wlvn-3nBMkt-P7vC6q27-22" target="wlvn-3nBMkt-P7vC6q27-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-26" value="用户侧" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="260" y="20" width="210" height="423" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-65" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="wlvn-3nBMkt-P7vC6q27-26" source="wlvn-3nBMkt-P7vC6q27-27" target="wlvn-3nBMkt-P7vC6q27-59" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-27" value="获取未下发&lt;br&gt;记录配置" style="whiteSpace=wrap;html=1;rounded=0;" parent="wlvn-3nBMkt-P7vC6q27-26" vertex="1">
+          <mxGeometry x="43.75" y="40" width="122.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="wlvn-3nBMkt-P7vC6q27-26" target="wlvn-3nBMkt-P7vC6q27-33" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="105.80000000000018" y="186.97231404958666" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="wlvn-3nBMkt-P7vC6q27-26" source="wlvn-3nBMkt-P7vC6q27-33" target="wlvn-3nBMkt-P7vC6q27-36" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-33" value="获取当前节点&lt;br&gt;配置文件" style="whiteSpace=wrap;html=1;" parent="wlvn-3nBMkt-P7vC6q27-26" vertex="1">
+          <mxGeometry x="46.25" y="252" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-36" value="配置文件下发" style="whiteSpace=wrap;html=1;" parent="wlvn-3nBMkt-P7vC6q27-26" vertex="1">
+          <mxGeometry x="46.25" y="342" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-59" value="立即下发" style="rounded=0;whiteSpace=wrap;html=1;" parent="wlvn-3nBMkt-P7vC6q27-26" vertex="1">
+          <mxGeometry x="45" y="152" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="wlvn-3nBMkt-P7vC6q27-14" target="wlvn-3nBMkt-P7vC6q27-27" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="278" y="318" />
+              <mxPoint x="278" y="90" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="wlvn-3nBMkt-P7vC6q27-36" target="wlvn-3nBMkt-P7vC6q27-46" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-49" value="配置备份协程" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="470" y="20" width="210" height="423" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-50" value="获取定时下发&lt;br&gt;记录配置且到期" style="whiteSpace=wrap;html=1;rounded=0;" parent="wlvn-3nBMkt-P7vC6q27-49" vertex="1">
+          <mxGeometry x="52.25" y="152" width="122.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="wlvn-3nBMkt-P7vC6q27-49" source="wlvn-3nBMkt-P7vC6q27-64" target="wlvn-3nBMkt-P7vC6q27-50" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-64" value="定时下发" style="rounded=0;whiteSpace=wrap;html=1;" parent="wlvn-3nBMkt-P7vC6q27-49" vertex="1">
+          <mxGeometry x="53.5" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="wlvn-3nBMkt-P7vC6q27-49" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-43.75" y="370" as="sourcePoint" />
+            <mxPoint x="263.5" y="81" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="225" y="370" />
+              <mxPoint x="225" y="81" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-67" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="wlvn-3nBMkt-P7vC6q27-27" target="wlvn-3nBMkt-P7vC6q27-64" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-69" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="wlvn-3nBMkt-P7vC6q27-50" target="wlvn-3nBMkt-P7vC6q27-59" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-70" value="节点" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="680" y="20" width="210" height="423" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-75" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="wlvn-3nBMkt-P7vC6q27-70" source="wlvn-3nBMkt-P7vC6q27-71" target="wlvn-3nBMkt-P7vC6q27-74" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-71" value="配置校验" style="whiteSpace=wrap;html=1;rounded=0;" parent="wlvn-3nBMkt-P7vC6q27-70" vertex="1">
+          <mxGeometry x="52.25" y="152" width="122.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-72" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="wlvn-3nBMkt-P7vC6q27-70" source="wlvn-3nBMkt-P7vC6q27-73" target="wlvn-3nBMkt-P7vC6q27-71" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-73" value="获取配置文件" style="rounded=0;whiteSpace=wrap;html=1;" parent="wlvn-3nBMkt-P7vC6q27-70" vertex="1">
+          <mxGeometry x="53.5" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-74" value="重启dhcpd服务" style="whiteSpace=wrap;html=1;" parent="wlvn-3nBMkt-P7vC6q27-70" vertex="1">
+          <mxGeometry x="53.5" y="261" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-255" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="wlvn-3nBMkt-P7vC6q27-256" target="wlvn-3nBMkt-P7vC6q27-260" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-35" y="671" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-256" value="触发配置变更" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-95" y="561" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-257" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="wlvn-3nBMkt-P7vC6q27-258" target="wlvn-3nBMkt-P7vC6q27-262" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="85" y="820" />
+              <mxPoint x="85" y="591" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-258" value="涉及变更节点存表" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-95" y="790" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-259" value="业务侧" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-135" y="521" width="210" height="423" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-260" value="记录操作日志" style="rounded=0;whiteSpace=wrap;html=1;" parent="wlvn-3nBMkt-P7vC6q27-259" vertex="1">
+          <mxGeometry x="40" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-261" value="配置生成协程" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="75" y="521" width="210" height="423" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-262" value="获取变更节点" style="whiteSpace=wrap;html=1;rounded=0;" parent="wlvn-3nBMkt-P7vC6q27-261" vertex="1">
+          <mxGeometry x="43.75" y="40" width="122.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-263" value="触发节点变更备份" style="whiteSpace=wrap;html=1;rounded=0;" parent="wlvn-3nBMkt-P7vC6q27-261" vertex="1">
+          <mxGeometry x="45" y="143" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-264" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="wlvn-3nBMkt-P7vC6q27-261" source="wlvn-3nBMkt-P7vC6q27-262" target="wlvn-3nBMkt-P7vC6q27-263" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-265" value="更新&lt;br&gt;配置备份记录表状态&lt;br&gt;（备份失败或成功）" style="whiteSpace=wrap;html=1;rounded=0;" parent="wlvn-3nBMkt-P7vC6q27-261" vertex="1">
+          <mxGeometry x="46.25" y="342" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-269" value="存配置备份记录表" style="whiteSpace=wrap;html=1;rounded=0;" parent="wlvn-3nBMkt-P7vC6q27-261" vertex="1">
+          <mxGeometry x="43.75" y="257" width="122.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-292" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="wlvn-3nBMkt-P7vC6q27-261" source="wlvn-3nBMkt-P7vC6q27-263" target="wlvn-3nBMkt-P7vC6q27-269" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-266" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="wlvn-3nBMkt-P7vC6q27-260" target="wlvn-3nBMkt-P7vC6q27-258" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-267" value="用户侧" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="285" y="521" width="210" height="423" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-272" value="获取当前节点&lt;br&gt;配置文件" style="whiteSpace=wrap;html=1;" parent="wlvn-3nBMkt-P7vC6q27-267" vertex="1">
+          <mxGeometry x="46.25" y="152" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-294" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="wlvn-3nBMkt-P7vC6q27-267" source="wlvn-3nBMkt-P7vC6q27-274" target="wlvn-3nBMkt-P7vC6q27-272" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-274" value="获取当前节点&lt;br&gt;配置文件" style="rounded=0;whiteSpace=wrap;html=1;" parent="wlvn-3nBMkt-P7vC6q27-267" vertex="1">
+          <mxGeometry x="46.25" y="42" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-277" value="配置备份协程" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="495" y="521" width="210" height="423" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-278" value="获取定时下发&lt;br&gt;记录配置且到期" style="whiteSpace=wrap;html=1;rounded=0;" parent="wlvn-3nBMkt-P7vC6q27-277" vertex="1">
+          <mxGeometry x="52.25" y="152" width="122.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-279" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="wlvn-3nBMkt-P7vC6q27-277" source="wlvn-3nBMkt-P7vC6q27-280" target="wlvn-3nBMkt-P7vC6q27-278" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-280" value="重新备份" style="rounded=0;whiteSpace=wrap;html=1;" parent="wlvn-3nBMkt-P7vC6q27-277" vertex="1">
+          <mxGeometry x="50" y="42" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-281" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="wlvn-3nBMkt-P7vC6q27-277" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-43.75" y="370" as="sourcePoint" />
+            <mxPoint x="263.5" y="81" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="225" y="370" />
+              <mxPoint x="225" y="81" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-284" value="节点" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="705" y="521" width="210" height="423" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-285" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="wlvn-3nBMkt-P7vC6q27-284" source="wlvn-3nBMkt-P7vC6q27-286" target="wlvn-3nBMkt-P7vC6q27-289" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-286" value="配置校验" style="whiteSpace=wrap;html=1;rounded=0;" parent="wlvn-3nBMkt-P7vC6q27-284" vertex="1">
+          <mxGeometry x="52.25" y="152" width="122.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-287" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="wlvn-3nBMkt-P7vC6q27-284" source="wlvn-3nBMkt-P7vC6q27-288" target="wlvn-3nBMkt-P7vC6q27-286" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-288" value="获取配置文件" style="rounded=0;whiteSpace=wrap;html=1;" parent="wlvn-3nBMkt-P7vC6q27-284" vertex="1">
+          <mxGeometry x="53.5" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-289" value="重启dhcpd服务" style="whiteSpace=wrap;html=1;" parent="wlvn-3nBMkt-P7vC6q27-284" vertex="1">
+          <mxGeometry x="53.5" y="261" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-293" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="wlvn-3nBMkt-P7vC6q27-269" target="wlvn-3nBMkt-P7vC6q27-274" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="301" y="808" />
+              <mxPoint x="301" y="593" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wlvn-3nBMkt-P7vC6q27-295" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="wlvn-3nBMkt-P7vC6q27-272" target="wlvn-3nBMkt-P7vC6q27-265" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="314" y="703" />
+              <mxPoint x="314" y="893" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="K8dGDAvrTJAFZOrZ0Jn6-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="317" y="254" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
