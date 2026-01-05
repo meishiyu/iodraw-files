@@ -119,16 +119,16 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="wlvn-3nBMkt-P7vC6q27-71" value="配置校验" style="whiteSpace=wrap;html=1;rounded=0;" parent="wlvn-3nBMkt-P7vC6q27-70" vertex="1">
-          <mxGeometry x="52.25" y="152" width="122.5" height="60" as="geometry" />
+          <mxGeometry x="53" y="189" width="122.5" height="60" as="geometry" />
         </mxCell>
         <mxCell id="wlvn-3nBMkt-P7vC6q27-72" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="wlvn-3nBMkt-P7vC6q27-70" source="wlvn-3nBMkt-P7vC6q27-73" target="wlvn-3nBMkt-P7vC6q27-71" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="wlvn-3nBMkt-P7vC6q27-73" value="获取配置文件" style="rounded=0;whiteSpace=wrap;html=1;" parent="wlvn-3nBMkt-P7vC6q27-70" vertex="1">
-          <mxGeometry x="53.5" y="40" width="120" height="60" as="geometry" />
+          <mxGeometry x="54.25" y="77" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="wlvn-3nBMkt-P7vC6q27-74" value="重启dhcpd服务" style="whiteSpace=wrap;html=1;" parent="wlvn-3nBMkt-P7vC6q27-70" vertex="1">
-          <mxGeometry x="53.5" y="261" width="120" height="60" as="geometry" />
+          <mxGeometry x="54.25" y="298" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="wlvn-3nBMkt-P7vC6q27-255" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="wlvn-3nBMkt-P7vC6q27-256" target="wlvn-3nBMkt-P7vC6q27-260" edge="1">
           <mxGeometry relative="1" as="geometry">
